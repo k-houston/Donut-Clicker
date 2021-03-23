@@ -1,27 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Module 4 Project</title>
-</head>
-<body>
-    <div class="container">
-        <div>
-            <h1>Donut Maker</h1>
+    <title>Donut Clicker</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script src="./src/js/donutMaker.js" defer></script>
+    <script src="./src/js/app.js" defer></script>
+  </head>
+  <body>
+    <section>
+        <header>
+            <a href="#"><img src="/images/donut logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Fred the Baking Company</a></li>
+                <li><a href="https://orteil.dashnet.org/cookieclicker/">The Inspiration for this game, Cookie Clicker</a></li>
+                <li><a href="#">Contact Info</a></li>
+            </ul>
+        </header>   
+    </section>
+        <div class="content">
+                <h1>Donut Clicker</h1>
+            <div class="donutCount">
+                <h3 id="Donut-Count"></h3>
+            </div>
+            <div class="donutClickCount">
+                <h3 id="Click-Value"></h3>
+                <button id="Main-Click__Button">Click Me!</button>
+            </div>
+            <div class="content">
+                <div>
+                    <div id="AutoClicker__Section">
+                        <h3 id="AutoClicker-Cost"></h3>
+                        <h3 id="AutoClicker-Count"></h3>
+                        <button id="AutoClickerBuy-Click__Button" disabled>Buy Auto Clicker</button>
+                    </div>
+                    <div id="Multiplier__Section">
+                        <h3 id="Multiplier-Cost"></h3>
+                        <h3 id="Multiplier-Count"></h3>
+                        <button id="MultiplierBuy-Click__Button" disabled>Buy Multiplier</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <h3>Donut Count:</h3>
-            <h3 id="Donut_Count"></h3>
-        </div>
-        <div>
-            <button id="mainButton">Click Me!</button>
-        </div>
-        <div>
-            <div>AutoClicker Section</div>
-            <div>ClickMultiplier Section</div>
-        </div>
+    <div id="Restart__Section">
+        <button id="Restart-Click__Button">Restart</button>
     </div>
-    <script src="/src/app.js"></script>
-</body>
+    <footer>
+        <div class="footerContent">
+            <h3>Fred the Baking Company</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sint sequi voluptatem laudantium accusantium impedit!</p>
+            <ul class="footerSocials">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        <div class="footerBottom">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quisquam!</p>
+        </div>
+    </footer>
+  </body>
 </html>
