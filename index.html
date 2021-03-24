@@ -10,15 +10,31 @@
   </head>
   <body>
         <nav>
-            <header>
+            <header class="modalContainer">
                 <img src="/images/donut logo.png" class="logo">
-                <ul>
-                    <li><a href="#">Fred the Baking Company</a></li>
-                    <li><a href="https://orteil.dashnet.org/cookieclicker/">The Inspiration for this game, Cookie Clicker</a></li>
-                    <li><a href="#">Contact Info</a></li>
-                </ul>
-            </header>   
+                <div class="headerBtn">
+                    <button id="modalBtnOne">Fred the Baking Company</button>
+                    <button><a href="https://orteil.dashnet.org/cookieclicker">The Inspiration For This Game,<br>
+                            Cookie Clicker</a></button>
+                        <button id="modalBtnTwo">Developer Info</button>
+                </div>
+            </header>
         </nav>
+
+        <div id="modal" class="myModal">
+            <div class="modalContent">
+                <span class="close">&times;</span>
+                <p> Fred the Baker is tired of making real donuts and is ready to retire. He needs our help to keep his love of donuts alive. He wants you to create a game that uses button clicks to create virtual donuts for the world to enjoy.</p>
+            </div>
+        </div>
+
+        <div id="modalTwo" class="myModalTwo">
+            <div class="modalContentTwo">
+                <span class="closeTwo">&times;</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis fugiat quia corrupti commodi consequuntur velit!</p>
+            </div>
+        </div>
+
             <div class="mainContent">
                     <h1>Donut Clicker</h1>
                 <div class="donutCount">
@@ -26,7 +42,7 @@
                 </div>
                 <div class="donutClickCount">
                     <h3 id="Click-Value"></h3>
-                    <button id="Main-Click__Button">Click Me!</button>
+                    <button id="Main-Click__Button">Click Me</button>
                 </div>
                 <div>
                     <div id="AutoClicker__Section">

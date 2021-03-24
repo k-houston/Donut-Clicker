@@ -1,4 +1,26 @@
+var modal = document.getElementById("modal");
+var modalTwo = document.getElementById("modalTwo");
+var btn = document.getElementById("modalBtnOne");
+var btnTwo = document.getElementById("modalBtnTwo");
+var span = document.getElementsByClassName("close")[0];
+var spanTwo = document.getElementsByClassName("closeTwo")[0];
+
 let gameDonut = new Donut();
+
+btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  btnTwo.onclick = function() {
+    modalTwo.style.display = "block";
+  }
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+spanTwo.onclick = function() {
+    modalTwo.style.display = "none";
+}
 
 load();
 
