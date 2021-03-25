@@ -57,15 +57,4 @@ class Donut {
     updateCurrentClickValue() {
         this.currentClickValue = (1 * Math.pow(1.2, this.clickMultiplierCount));
     }
-
-    // resetGame() {
-    //      this.donutCount = 0;
-    //      this.currentClickValue = 1;
-
-    //      this.autoClickerCount = 0;
-    //      this.autoClickerCost = 100;
-
-    //      this.clickMultiplierCount = 0;
-    //      this.clickMultiplierCost = 10;
-    // }
 }
