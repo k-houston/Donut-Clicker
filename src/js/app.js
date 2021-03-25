@@ -9,11 +9,12 @@ let gameDonut = new Donut();
 
 btn.onclick = function() {
     modal.style.display = "block";
-  }
+}
 
-  btnTwo.onclick = function() {
+btnTwo.onclick = function() {
     modalTwo.style.display = "block";
-  }
+}
+
 span.onclick = function() {
     modal.style.display = "none";
 }
